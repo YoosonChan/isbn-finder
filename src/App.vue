@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, unref } from 'vue';
+import { getBookInfo } from './utils/douban'
 const isbn = ref('')
 const inputRef = ref()
 const result = ref('')
@@ -9,6 +10,7 @@ const handleKeydown = (e: KeyboardEvent) => {
     result.value = unref(isbn)
     // clear input content
     isbn.value = ''
+    getBookInfo(result.value)
   }
 }
 const addListener = () => {
