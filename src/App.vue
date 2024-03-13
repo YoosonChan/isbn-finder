@@ -70,11 +70,10 @@ onUnmounted(() => {
     </div>
     <div class="mt-5">{{ result }}</div>
   </div>
-  <a-modal v-model:visible="visible" title="enter appCode" :on-before-ok="handleBeforeOk"
+  <a-modal v-model:visible="visible" title="Enter AppCode" :on-before-ok="handleBeforeOk"
     :on-before-cancel="handleBeforeCancel" :mask-closable="false" :closable="false" :esc-to-close="false">
     <a-input v-model="appCode">
       <template #prepend>appCode:</template>
     </a-input>
   </a-modal>
 </template>
-./utils/bookQuery

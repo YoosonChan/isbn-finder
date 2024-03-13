@@ -1,10 +1,10 @@
-# douban-book
+# ISBN Finder
 
-douban book search by ISBN
+An ISBN search tool that allows users to find book information through Douban or API.
 
 ## TODO
 
-- [] writing query methods
-- [] displaying query results
-- [] storing query results
-- [] updating data to vika
+- [] Writing query methods
+- [] Displaying query results
+- [] Storing query results
+- [] Updating data to vika
